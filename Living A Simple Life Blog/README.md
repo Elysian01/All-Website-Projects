@@ -1,8 +1,8 @@
 ## Totally Responsive Website Made With HTML And CSS
 
-## Theme : Living the social life
+## Theme : Living the social life Blog
 
-## Final Product View
+## Final Product Glimpse
 
 <img src="Images/layout2.png" height="500" width="500">
 <img src="Images/layout1.png" height="500" width="500">
