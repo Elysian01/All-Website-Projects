@@ -1,6 +1,6 @@
 ## Totally Responsive Website Made With HTML And CSS
 
-## Theme : Living the social life Blog
+## Theme : Living the social life blog
 
 ## Final Product Glimpse
 
