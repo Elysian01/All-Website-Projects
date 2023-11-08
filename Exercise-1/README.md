@@ -72,3 +72,11 @@ Profile page:
     </script>
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant&display=swap" rel="stylesheet">
 ```
+
+
+### References
+
+1. https://codepen.io/nis-chal/pen/qBQmYKa
+2. https://codepen.io/davecast/pen/QWKLByd
+3. Images
+   1. https://www.pngwing.com/en/free-png-bsezh

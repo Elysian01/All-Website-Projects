@@ -5,7 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Homepage</title>
+    
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/card.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     
@@ -16,83 +19,219 @@
 </head>
 
 <body>
-    <!-- <nav class="navbar">
-        <div class="navbar-container container">
-            <input type="checkbox" name="" id="">
-            <div class="hamburger-lines">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
+    <section id="one">
+        <nav id="nav">
+            <div class="nav-logo">
+                <div class="nav-heading">
+                    <span href="#"><i class="fa fa-utensils"></i>Yummy</span>
+                </div>
+
+                <div class="hamburger">
+                    <a href="#"><i class="fas fa-bars "></i></a>
+                </div>
             </div>
-            <ul class="menu-items">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Category</a></li>
-                <li><a href="#">Cart</a></li>
+
+            <ul class="nav-links">
+                <li><a class = "nav-item" href="/">Home</a></li>
+                <li><a class = "nav-item" href = "#">South Indian</a></li>
+                <li><a  class = "nav-item" href = "#">European</a></li>
+                <li><a  class = "nav-item" href = "./webpages/profile.html">Profile</a></li>
+                <li><a  class = "nav-item" href = "./webpages/cart.html">Cart</a></li>
+                <!-- <div class="search-section">
+                    <span class="search"><input type="search" placeholder="Enter to search"> <button
+                            class="search-btn"><i class="fas fa-search"></i></button></span>
+                </div> -->
+                <!-- <span><i class="fa fa-user gold fa-lg"></i></span> -->
             </ul>
-            <h1 class="logo">yummy</h1>
-        </div> -->
-        <body>
+        </nav>
+
+        <div class="content">
+            <div class="text-content">
+                <h1 class="white text-center">It's not just food it's an <strong>Experience!</strong>
+                </h1>
+                <h4 class="white">The best delicious food that meet your needs, order now</h4>
+                <div class="landing-page-button">
+                    <button class="order-now"><a href="#products">Order Now <i class="fa fa-arrow-right"></i></a></button>
+                </div>
+            </div>
+     </section>
         
-            <section id="one">
-                <nav id="nav">
-                    <div class="nav-logo">
-                        <div class="nav-heading">
-                            <span href="#"><i class="fa fa-utensils"></i>Yummy</span>
+    <br><br>
+
+    <div class="heading-center">
+        <label style="font-size: 40px; text-shadow: 1px 1px 1px gray;">
+            <b>Order Fresh Food</b>
+        </label>
+    </div>
+
+    <div class = "products" id="products">
+        <section class="section">
+            <div class="container">
+                <div class="grid">
+                    <article class="card">
+                        <img class="card__image" src="./imgs/foods/dosa.png" />
+                        <div class="card__data">
+                            <div class="card_info_container">
+                                <div class="card__info">
+                                    <h2>Masala Dosa</h2>
+                                    <p>Descripcion de la comida, con ingredientes</p>
+                                </div>
+                                <button class = "add_to_cart">Add to Cart</button>
+                            </div>
+                            <div class="rating">
+                                <h3 class="card__price">₹60</h3>
+                                <br><br>
+                                <i class="fa fa-star dark-red">(4.5)</i>
+                            </div>
                         </div>
-        
-                        <div class="hamburger">
-                            <!-- <a href="#"><i class="far fa-moon white "></i></a> -->
-                            <a href="#"><i class="fas fa-bars "></i></a>
+                    </article>
+                    <article class="card">
+                        <img class="card__image" src="./imgs/foods/manchurian.png" />
+                        <div class="card__data">
+                            <div class="card_info_container">
+                                <div class="card__info">
+                                    <h2>Veg Pulov</h2>
+                                    <p>Descripcion de la comida, con ingredientes</p>
+                                </div>
+                                <button class="add_to_cart">Add to Cart</button>
+                            </div>
+                            <div class="rating">
+                                <h3 class="card__price">₹100</h3>
+                                <br><br>
+                                <i class="fa fa-star dark-red">(4.6)</i>
+                            </div>
                         </div>
-                    </div>
-        
-                    <ul class="nav-links">
-                        <li><a>HOME</a></li>
-                        <li><a>South Indian</a></li>
-                        <li><a>Western</a></li>
-                        <li><a>Cart</a></li>
-                        <!-- <div class="search-section">
-                            <span class="search"><input type="search" placeholder="Enter to search"> <button
-                                    class="search-btn"><i class="fas fa-search"></i></button></span>
-                        </div> -->
-                     
-                    </ul>
-                </nav>
-        
-                <div class="content">
-                    <div class="text-content">
-                        <h1 class="white">Providing Special care
-                            For <strong>Your Pets!</strong>
-                        </h1>
-                        <h4 class="blackish">We offer special services for special pets!</h4>
-                        <div class="two-button">
-                            <button class="w-btn btn">View Our Services</button>
-                            <button class="t-btn btn">Hire Us</button>
+                    </article>
+                    <article class="card">
+                        <img class="card__image" src="./imgs/foods/idli.png" />
+                        <div class="card__data">
+                                <div class="card_info_container">
+                                    <div class="card__info">
+                                        <h2>Steamed Idli</h2>
+                                        <p>Descripcion de la comida, con ingredientes</p>
+                                    </div>
+                                    <button class="add_to_cart">Add to Cart</button>
+                                </div>
+                                <div class="rating">
+                                    <h3 class="card__price">₹40</h3>
+                                    <br><br>
+                                    <i class="fa fa-star dark-red">(4.8)</i>
+                                </div>
                         </div>
-                    </div>
-            </section>
+                    </article>
+                    <article class="card">
+                        <img class="card__image" src="./imgs/foods/bolognese.png" />
+                        <div class="card__data">
+                            <div class="card_info_container">
+                                <div class="card__info">
+                                    <h2>Bolognese</h2>
+                                    <p>Descripcion de la comida, con ingredientes</p>
+                                </div>
+                                <button class="add_to_cart">Add to Cart</button>
+                            </div>
+                            <div class="rating">
+                                <h3 class="card__price">₹229</h3>
+                                <br><br>
+                                <i class="fa fa-star dark-red">(4.2)</i>
+                            </div>
+                        </div>
+                    </article>
+
+
+
+
+
+                    <article class="card">
+                        <img class="card__image" src="./imgs/foods/combo.png" />
+                        <div class="card__data">
+                            <div class="card_info_container">
+                                <div class="card__info">
+                                    <h2>Burger Combo</h2>
+                                    <p>Descripcion de la comida, con ingredientes</p>
+                                </div>
+                                <button class="add_to_cart">Add to Cart</button>
+                            </div>
+                            <div class="rating">
+                                <h3 class="card__price">₹359</h3>
+                                <br><br>
+                                <i class="fa fa-star dark-red">(4.1)</i>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img class="card__image" src="./imgs/foods/samosa.png" />
+                        <div class="card__data">
+                            <div class="card_info_container">
+                                <div class="card__info">
+                                    <h2>Veg Samosa</h2>
+                                    <p>Descripcion de la comida, con ingredientes</p>
+                                </div>
+                                <button class="add_to_cart">Add to Cart</button>
+                            </div>
+                            <div class="rating">
+                                <h3 class="card__price">₹60</h3>
+                                <br><br>
+                                <i class="fa fa-star dark-red">(4.6)</i>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img class="card__image" src="./imgs/foods/noodles.png" />
+                        <div class="card__data">
+                            <div class="card_info_container">
+                                <div class="card__info">
+                                    <h2>Hakka Noodles</h2>
+                                    <p>Descripcion de la comida, con ingredientes</p>
+                                </div>
+                                <button class="add_to_cart">Add to Cart</button>
+                            </div>
+                            <div class="rating">
+                                <h3 class="card__price">₹40</h3>
+                                <br><br>
+                                <i class="fa fa-star dark-red">(4.8)</i>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img class="card__image" src="./imgs/foods/pizza.png" />
+                        <div class="card__data">
+                            <div class="card_info_container">
+                                <div class="card__info">
+                                    <h2>Special Pizza</h2>
+                                    <p>Descripcion de la comida, con ingredientes</p>
+                                </div>
+                                <button class="add_to_cart">Add to Cart</button>
+                            </div>
+                            <div class="rating">
+                                <h3 class="card__price">₹229</h3>
+                                <br><br>
+                                <i class="fa fa-star dark-red">(4.3)</i>
+                            </div>
+                        </div>
+                    </article>
+
+
+                </div>
+            </div>
+        </section>
+    </div>
+    
+
+    <!-- <section id="six">
+        <h5>PET LOVERS</h5>
+        <h1>Our Team Is Filled With Highly Dedicated Pet Lovers</h1>
+        <button class="btn w-btn">Read More</button>
+    </section> -->
+
+    <br><br><br><br>
+
+    <div class="p-2 bg-warning font-weight-bold text-dark text-center bottom-0 mobile-text">
+        Build by <strong>
+            Abhishek Manilal Gupta</strong>
+    </div>
         
-            <br><br><br><br>
-            <section id="six">
-                <h5>PET LOVERS</h5>
-                <h1>Our Team Is Filled With Highly Dedicated Pet Lovers</h1>
-                <button class="btn w-btn">Read More</button>
-            </section>
-
-            <br><br><br><br>
+    <script src="./js/main.js"></script>
         
-            <!-- <script src="jquery-3.6.0.min.js"></script> -->
-            <!-- <script src=”https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js”></script> -->
-
-            <script src="./js/main.js"></script>
-        
-        </body>
-
-    </nav>
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
