@@ -19,8 +19,14 @@ p {
     grid-gap: 15px;
 }
 
+.grid-3 {
+    display: grid;
+        grid-template: 1fr / repeat(3, auto);
+        grid-gap: 15px;
+}
+
 @media (max-width: 768px) {
-    .grid {
+    .grid, .grid-3 {
         grid-template-columns: 1fr;
         /* Displays one card per row on smaller screens */
     }

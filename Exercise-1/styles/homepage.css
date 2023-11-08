@@ -66,10 +66,14 @@ a {
 
 #one {
     min-height: 100vh;
-    background-image: linear-gradient(75deg, rgb(6 6 6 / 64%) 8%, transparent),
-        url("../imgs/bg/bg-1.jpg");
-    background-position: center;
-    background-size: cover;
+}
+
+.landing-page {
+    min-height: 100vh;
+        background-image: linear-gradient(75deg, rgb(6 6 6 / 64%) 8%, transparent),
+            url("../imgs/bg/bg-1.jpg");
+        background-position: center;
+        background-size: cover;
 }
 
 #nav {
