@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product</title>
+
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/misc.css">
+    <link rel="shortcut icon" href="../imgs/icon.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/c587fc1763.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="header">
+        <nav id="nav">
+            <div class="nav-logo">
+                <div class="nav-heading">
+                    <span href="#"><i class="fa fa-utensils"></i>Yummy</span>
+                </div>
+
+                <div class="hamburger">
+                    <a href="#"><i class="fas fa-bars "></i></a>
+                </div>
+            </div>
+
+            <ul class="nav-links">
+                <li><a class="nav-item" href="../index.html">Home</a></li>
+                <li><a class="nav-item" href="#">South Indian</a></li>
+                <li><a class="nav-item" href="#">European</a></li>
+                <li><a class="nav-item" href="./profile.html">Profile</a></li>
+                <li><a class="nav-item" href="./cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </section>
+
+
+    <div class="pd-wrap">
+        <div class="container">
+    
+            <div class="row">
+                <div class="col-md-6">
+                    <div>
+                        <img class = "product-img"
+                            src="../imgs/foods/samosa.png" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="product-dtl">
+                        <div class="product-info">
+                            <div class="product-name">Fresh Samosa</div>
+                            <div class="reviews-counter">
+                                <div class="rate">
+                                    <!-- <input type="radio" id="star5" name="rate" value="5" checked />
+                                    <label for="star5" title="text">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" value="4" checked />
+                                    <label for="star4" title="text">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" value="3" checked />
+                                    <label for="star3" title="text">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" value="2" />
+                                    <label for="star2" title="text">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" value="1" />
+                                    <label for="star1" title="text">1 star</label> -->
+                                    <span class = "rating"><i class="fa fa-star dark-red fa-2xl">(4.2)</i></span>
+                                </div>
+                                <span>3 Reviews</span>
+                            </div>
+                            <div class="product-price-discount"><span>₹60</span><span class="line-through">₹80.00</span>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        
+                        <div class="product-count">
+                            <label for="size">Quantity</label>
+                            <form action="#" class="display-flex">
+                                <div class="qtyminus">-</div>
+                                <input type="text" name="quantity" value="1" class="qty">
+                                <div class="qtyplus">+</div>
+                            </form>
+                            <a href="#" class="round-black-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info-tabs">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab"
+                            aria-controls="description" aria-selected="true">Description</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="review-tab" data-toggle="tab" href="#review" role="tab"
+                            aria-controls="review" aria-selected="false">Reviews (0)</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="description" role="tabpanel"
+                        aria-labelledby="description-tab">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat. 
+                    </div>
+                    <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+                        <div class="review-heading">REVIEWS</div>
+                        <p class="mb-20">There are no reviews yet.</p>
+                        <form class="review-form">
+                            <div class="form-group">
+                                <label>Your rating</label>
+                                <div class="reviews-counter">
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text">1 star</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label>Your message</label>
+                                <textarea class="form-control" rows="10"></textarea>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="" class="form-control" placeholder="Name*">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="" class="form-control" placeholder="Email Id*">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="round-black-btn">Submit Review</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    
+        
+        </div>
+    </div>
+
+
+    <br>
+
+    <br><br><br>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="	sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+<!-- 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script> -->
+</body>
+
+</html>
