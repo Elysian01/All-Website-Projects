@@ -36,7 +36,7 @@ function ProductDetail() {
     const [reviews, setReview] = useState(defaultReview);
 
     function reviewSubmitted() {
-        let starValue = 1;
+        let starValue = star;
         if (star > 5)
             starValue = 5
         if (star < 0)
