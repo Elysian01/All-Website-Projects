@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* font-family: 'Outfit', sans-serif; */
+    font-family: 'Nova Square', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none !important;
+}
+
+:root {
+    --red: #f40d30;
+    --blue: #0CAFFF;
+    --gold: #ffd700;
+}
+
+.bg-yellow { 
+    background-color: var(--yellow) !important;
+}
+
+
+
+body {
+    /* width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px; */
+    /* background-color: #F5FEFD; */
+    /* min-height: 100vh; */
+}
