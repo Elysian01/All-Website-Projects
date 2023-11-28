@@ -1,3 +1,8 @@
+## [Employee CRUD (React, SpringBoot)](./Employee-CRUD/):
+
+During registration ask for employee details including photograph(do not save as blob), and the departmen (Drop Down Selection), also check for department capacity. Assign a unique employee id. Allow modification of all details including employee id, photograph and department.
+
+
 ## [Yummy-Static-Web-App (HTML, CSS)](./Yummy-Static-Web-App/):
 
 A responsive food delivery web application containing the following pages. 
