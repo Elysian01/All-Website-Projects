@@ -15,7 +15,7 @@ function EmployeeRegister() {
 					<p>Employee Registration</p>
 				</div>
 
-				<EmployeeForm/>
+				<EmployeeForm  modifyDetailsForm={false} />
 
 			</div>
     	</div>

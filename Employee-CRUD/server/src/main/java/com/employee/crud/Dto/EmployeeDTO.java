@@ -14,13 +14,13 @@ public class EmployeeDTO {
     private String lname;
     private String email;
     private String title;
-    private byte[] photo;
+    private Integer photo;
     private Integer dno;
     private String password;
     private Boolean isadmin;
 
 
-    public EmployeeDTO(Integer eid, String fname, String lname, String email, String title, byte[] photo, Integer dno, String password, Boolean isadmin) {
+    public EmployeeDTO(Integer eid, String fname, String lname, String email, String title, Integer photo, Integer dno, String password, Boolean isadmin) {
         this.eid = eid;
         this.fname = fname;
         this.lname = lname;
@@ -99,11 +99,11 @@ public class EmployeeDTO {
         this.title = title;
     }
 
-    public byte[] getPhoto() {
+    public Integer getPhoto() {
         return photo;
     }
 
-    public void setPhoto(byte[] photo) {
+    public void setPhoto(Integer photo) {
         this.photo = photo;
     }
 
@@ -124,7 +124,7 @@ public class EmployeeDTO {
                 ", lname='" + lname + '\'' +
                 ", email='" + email + '\'' +
                 ", title='" + title + '\'' +
-                ", photo=" + Arrays.toString(photo) +
+                ", photo=" + photo +
                 ", dno=" + dno +
                 ", password='" + password + '\'' +
                 '}';

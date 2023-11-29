@@ -29,7 +29,7 @@ public class Employee {
 
     @Lob
     @Column(name = "photo")
-    private byte[] photo;
+    private Integer photo;
 
     @Column(name = "dno")
     private Integer dno;
@@ -47,7 +47,7 @@ public class Employee {
     // Constructors, getters, and setters
 
 
-    public Employee(Integer eid, String fname, String lname, String email, String title, byte[] photo, Integer dno, String password, Boolean isadmin) {
+    public Employee(Integer eid, String fname, String lname, String email, String title, Integer photo, Integer dno, String password, Boolean isadmin) {
         this.eid = eid;
         this.fname = fname;
         this.lname = lname;
@@ -118,11 +118,11 @@ public class Employee {
         this.title = title;
     }
 
-    public byte[] getPhoto() {
+    public Integer getPhoto() {
         return photo;
     }
 
-    public void setPhoto(byte[] photo) {
+    public void setPhoto(Integer photo) {
         this.photo = photo;
     }
 
@@ -151,7 +151,7 @@ public class Employee {
                 ", lname='" + lname + '\'' +
                 ", email='" + email + '\'' +
                 ", title='" + title + '\'' +
-                ", photo=" + Arrays.toString(photo) +
+                ", photo=" + photo +
                 ", dno=" + dno +
                 ", password='" + password + '\'' +
                 ", isadmin=" + isadmin +

@@ -5,6 +5,7 @@ import com.employee.crud.Dto.LoginDTO;
 import com.employee.crud.Entity.Employee;
 import com.employee.crud.Service.EmployeeService;
 import com.employee.crud.payload_response.LoginMessage;
+import com.employee.crud.payload_response.RegisterEmployeeMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.http.ResponseEntity;
@@ -21,10 +22,10 @@ public class EmployeeController {
     @Autowired
     private EmployeeService employeeService;
 
-    @PostMapping(path="/add")
-    public Integer addEmployee(@RequestBody EmployeeDTO employeeDTO) {
-        Integer eid = employeeService.addEmployee(employeeDTO);
-        return eid;
+    @PostMapping(path="/register")
+    public ResponseEntity<?> addEmployee(@RequestBody EmployeeDTO employeeDTO) {
+        RegisterEmployeeMessage registerMessage = employeeService.addEmployee(employeeDTO);
+        return ResponseEntity.ok(registerMessage);
     }
     @GetMapping("/hello")
     public String sayHello() {

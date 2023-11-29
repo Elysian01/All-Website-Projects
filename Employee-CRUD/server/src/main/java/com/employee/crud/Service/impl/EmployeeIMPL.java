@@ -2,10 +2,13 @@ package com.employee.crud.Service.impl;
 
 import com.employee.crud.Dto.EmployeeDTO;
 import com.employee.crud.Dto.LoginDTO;
+import com.employee.crud.Entity.Department;
 import com.employee.crud.Entity.Employee;
+import com.employee.crud.Repo.DepartmentRepo;
 import com.employee.crud.Repo.EmployeeRepo;
 import com.employee.crud.Service.EmployeeService;
 import com.employee.crud.payload_response.LoginMessage;
+import com.employee.crud.payload_response.RegisterEmployeeMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -20,29 +23,49 @@ public class EmployeeIMPL implements EmployeeService {
     @Autowired
     private EmployeeRepo employeeRepo;
 
+    @Autowired
+    private DepartmentRepo departmentRepo;
 
 //    PasswordEncoder passwordEncoder;
 
     @Override
-    public Integer addEmployee(EmployeeDTO employeeDTO) {
+    public RegisterEmployeeMessage addEmployee(EmployeeDTO employeeDTO) {
+        // Fetch the department by department number (DNO)
+        Optional<Department> departmentOptional = departmentRepo.findByDeptId(employeeDTO.getDno());
 
+        if (departmentOptional.isPresent()) {
+            Department department = departmentOptional.get();
 
-        Employee employee = new Employee(
-                employeeDTO.getEid(),
-                employeeDTO.getFname(),
-                employeeDTO.getLname(),
-                employeeDTO.getEmail(),
-                employeeDTO.getTitle(),
-                employeeDTO.getPhoto(),
-                employeeDTO.getDno(),
-                employeeDTO.getPassword(),
-                employeeDTO.getIsadmin()
-//                passwordEncoder.encode(employeeDTO.getPassword())
-        );
+            // Check if the department has the capacity to add a new employee
+            if (department.getCurrentCapacity() < department.getCapacity()) {
+                // If the department has capacity, proceed to add the employee
+                Employee employee = new Employee(
+                        employeeDTO.getEid(),
+                        employeeDTO.getFname(),
+                        employeeDTO.getLname(),
+                        employeeDTO.getEmail(),
+                        employeeDTO.getTitle(),
+                        employeeDTO.getPhoto(),
+                        employeeDTO.getDno(),
+                        employeeDTO.getPassword(),
+                        employeeDTO.getIsadmin()
+    //                    passwordEncoder.encode(employeeDTO.getPassword())
+                );
 
-        employeeRepo.save(employee);
+                employeeRepo.save(employee);
 
-        return employee.getEid();
+                // Update the current capacity of the department
+                department.setCurrentCapacity(department.getCurrentCapacity() + 1);
+                departmentRepo.save(department);
+                return new RegisterEmployeeMessage("Employee Registered Successfully", true);
+            } else {
+                // Department is at full capacity, handle accordingly
+                return new RegisterEmployeeMessage("Department is at full capacity. Cannot add more employees.", false);
+            }
+        } else {
+            // Department not found, handle accordingly
+            return new RegisterEmployeeMessage("Department not found for DNO: " + employeeDTO.getDno(), false);
+        }
     }
 
     @Override
