@@ -1,3 +1,9 @@
+## Project Sequence
+
+1. [Yummy Static Website](./Yummy-Static-Web-App/)
+2. [Yummy MERN Stack](./Yummy-MERN-Stack-Project/)
+3. [Employee CRUD Application](./Employee-CRUD/)
+
 ## [Employee CRUD (React, SpringBoot)](./Employee-CRUD/):
 
 During registration ask for employee details including photograph(do not save as blob), and the departmen (Drop Down Selection), also check for department capacity. Assign a unique employee id. Allow modification of all details including employee id, photograph and department.
@@ -31,6 +37,11 @@ A responsive food delivery web application containing the following pages.
 
 
 ## [Yummy MERN Stack Project (React JS)](./Yummy-MERN-Stack-Project/):
+
+- [Server](./Yummy-MERN-Stack-Project/server/) [Node JS Server]
+- [Server-2](./Yummy-MERN-Stack-Project/server-2/) [SpringBoot Server]
+
+Both Accepts requests on "http://localhost:9000/products"
 
 Now, building a react application as if to enhance the above pages lighter by identifying re- usable components and also to make the pages dynamic in the sense interacting with server. 
 
