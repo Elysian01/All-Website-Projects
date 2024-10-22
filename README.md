@@ -13,6 +13,8 @@ During registration ask for employee details including photograph(do not save as
 
 A responsive food delivery web application containing the following pages. 
 
+![](https://github.com/Elysian01/Web-Development-Exercises/blob/main/demo/yummy-app-demo-gif.gif)
+
 1. Product listing page
    
 2. Product details page containing
