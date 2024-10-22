@@ -1,8 +1,10 @@
 ## Project Sequence
 
-1. [Yummy Static Website](./Yummy-Static-Web-App/)
+1. [Yummy Static Website (HTML/CSS)](./Yummy-Static-Web-App/)
 2. [Yummy MERN Stack](./Yummy-MERN-Stack-Project/)
-3. [Employee CRUD Application](./Employee-CRUD/)
+3. [Yummy Complete App with Login](./Yummy-MERN-Stack-Project-with-login/)
+4. [Employee CRUD Application](./Employee-CRUD/)
+5. [Blogging Websites (Very old, learning purpose)](./Blogging-Websites/)
 
 ## [Employee CRUD (React, SpringBoot)](./Employee-CRUD/):
 
@@ -13,7 +15,7 @@ During registration ask for employee details including photograph(do not save as
 
 A responsive food delivery web application containing the following pages. 
 
-![](https://github.com/Elysian01/Web-Development-Exercises/blob/main/demo/yummy-app-demo-gif.gif)
+![](https://github.com/Elysian01/All-Website-Projects/blob/main/Demo-and-Designs/yummy-app-demo-gif.gif)
 
 1. Product listing page
    
