@@ -15,7 +15,7 @@ function Navbar(props) {
     }
 
     useEffect(() => {
-        window.addEventListener('scroll',handleScroll)
+        window.addEventListener('scroll', handleScroll)
     })
     let navbarClasses = "";
     if(scrolled){

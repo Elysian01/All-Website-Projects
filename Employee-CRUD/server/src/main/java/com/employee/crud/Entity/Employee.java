@@ -7,6 +7,7 @@ import java.util.Arrays;
 @Entity
 @Table(name="employee")
 public class Employee {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")

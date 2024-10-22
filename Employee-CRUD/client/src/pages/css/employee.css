@@ -104,6 +104,11 @@
     /* margin: 20px; */
 }
 
+.card:hover {
+    scale:1.05;
+    transition: 0.5s;
+}
+
 .card-dept {
     margin:0 !important;
     padding: 0 !important;

@@ -4,9 +4,7 @@ USE employee;
 
 DROP TABLE IF EXISTS employee, department, image;
 
-###ddls###
-
-##USERS
+-- Employee Table structure
 CREATE TABLE employee (
                           id INT AUTO_INCREMENT PRIMARY KEY,
                           eid INT,
@@ -20,7 +18,7 @@ CREATE TABLE employee (
 );
 
 
-##Department
+-- Department Table structure
 CREATE TABLE department (
                             dept_id INT AUTO_INCREMENT PRIMARY KEY,
                             name VARCHAR(255) NOT NULL,
@@ -28,7 +26,7 @@ CREATE TABLE department (
                             current_capacity INT default 0
 );
 
-## Image
+-- Image Table structure
 CREATE TABLE image (
                        id BIGINT PRIMARY KEY AUTO_INCREMENT,
                        name VARCHAR(255),
@@ -36,7 +34,7 @@ CREATE TABLE image (
                        imagePath VARCHAR(255)
 );
 
-###ALTER FKS
+-- Alter FK's
 
 ALTER TABLE employee
     ADD CONSTRAINT fk_department
@@ -46,9 +44,9 @@ ALTER TABLE Employee
     ADD CONSTRAINT fk_employee_photo
         FOREIGN KEY (photo) REFERENCES Image(id);
 
-###INSERTS
+-- Insert
 
-## Employee Table
+-- Employee Table 
 INSERT INTO employee (eid, fname, lname, email, title, photo, dno, isadmin)
 VALUES
     (101, 'John', 'Doe', 'john.doe@example.com', 'Software Engineer', 53, 1, 1),
@@ -57,7 +55,7 @@ VALUES
     (104, 'Alice', 'Williams', 'alice.williams@example.com', 'UI/UX Designer', 56, 2, 0),
     (105, 'Charlie', 'Brown', 'charlie.brown@example.com', 'DevOps Engineer', 57, 1, 0);
 
-## Department table
+-- Department table
 INSERT INTO department (dept_id, name, capacity, current_capacity)
 VALUES
     (1, 'cse', 2, 2),
@@ -65,7 +63,7 @@ VALUES
     (3, 'extc', 2, 1);
 
 
-## Image Table
+-- Image Table
 INSERT INTO Image (id, imagePath, name, type)
 VALUES (53, 'D:\\Mtech\\MTech-Projects\\Web-Development-Exercises\\Employee-CRUD\\server\\src\\main\\resources\\imgs\\mukesh-ambani.jpg',
         'mukesh-ambani.jpg', 'image/jpeg');
