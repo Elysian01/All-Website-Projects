@@ -1,0 +1,22 @@
+{
+    "name": "nodemongoexpress",
+    "version": "1.0.0",
+    "description": "Crud Application in node express and mongo support",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server",
+        "dev": "nodemon server"
+    },
+    "author": "Abhishek Gupta",
+    "license": "MIT",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "express": "^4.17.1",
+        "express-handlebars": "^3.1.0",
+        "mongoose": "^5.9.10"
+    },
+    "devDependencies": {
+        "handlebars": "^4.7.6",
+        "nodemon": "^2.0.3"
+    }
+}
