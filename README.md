@@ -1,8 +1,10 @@
 ## Project Sequence
 
-1. [Yummy Static Website](./Yummy-Static-Web-App/)
+1. [Yummy Static Website (HTML/CSS)](./Yummy-Static-Web-App/)
 2. [Yummy MERN Stack](./Yummy-MERN-Stack-Project/)
-3. [Employee CRUD Application](./Employee-CRUD/)
+3. [Yummy Complete App with Login](./Yummy-MERN-Stack-Project-with-login/)
+4. [Employee CRUD Application](./Employee-CRUD/)
+5. [Blogging Websites](./Blogging-Websites/)
 
 ## [Employee CRUD (React, SpringBoot)](./Employee-CRUD/):
 
