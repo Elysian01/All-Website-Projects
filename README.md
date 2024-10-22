@@ -4,7 +4,7 @@
 2. [Yummy MERN Stack](./Yummy-MERN-Stack-Project/)
 3. [Yummy Complete App with Login](./Yummy-MERN-Stack-Project-with-login/)
 4. [Employee CRUD Application](./Employee-CRUD/)
-5. [Blogging Websites](./Blogging-Websites/)
+5. [Blogging Websites (Very old, learning purpose)](./Blogging-Websites/)
 
 ## [Employee CRUD (React, SpringBoot)](./Employee-CRUD/):
 
